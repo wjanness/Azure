@@ -37,11 +37,6 @@
         name: docker
         enabled: yes
 
-root@b76cc9c39e4f:/etc/ansible/files# clear
-
-root@b76cc9c39e4f:/etc/ansible/files# nano elk-server.yml 
-
-
 
 
 
