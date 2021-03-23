@@ -74,17 +74,15 @@ The playbook implements the following tasks:
 - ... Download 'Images' to be installed on target machines. 
 - ... Install software such as Docker & Python 3 (PIP)
 - ... Increases 'Virtual Memory' on target systems as needed.
-- ... Publishes Required Ports such as: 5601, 
+- ... Publishes Required Ports such as: (tcp) 5044, 5601, 9200, 9300 
 - ... Download and install ELK Stack Container (v761)
 - ... Enable installed system to startup on reboot
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 <figure><img src="/Images/Docker_PS.png"><figcaption></figcaption></figure>
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring_
 
 | Name       | Function      | IP Address | Operating System           |
 |------------|---------------|------------|----------------------------|
@@ -93,12 +91,12 @@ This ELK server is configured to monitor the following machines:
 | Web-3      | Web Server    | 10.0.0.5   | Linux - Ubuntu 18.04 LTS   |
 
 We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed_ Metric and file beats
+- FileBeats
+- MetricBeats
 
 These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
-File beats collects logs of file changes for each minitored system. The information is than sent to Logstash and Elastic Search. An Example would be system.syslog that shows the boot process and 
-Colleccts metwroics on the operating system. Its ued to report on CPU, Memory and load metrics
+- File beats collects logs of file changes for each minitored system. The information is than sent to Logstash and Elastic Search. An Example would be    system.syslog that shows the boot process and 
+- Colleccts metrics on the system such as CPU, Memory and Traffic Load and is used to generate reports. Its ued to report on CPU, Memory and load metrics
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
