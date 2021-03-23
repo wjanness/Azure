@@ -71,10 +71,10 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 - _TODO: What is the main advantage of automating configuration with Ansible?_ Quick to rebuild. Better Quality Assurance. All servers setup the same way. Changed can happen all at the sae time.
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...Docker, Python 3 (PIOP)
-- ...Increases memory on the VM
-- ... Publishes Ports 5601, 
+- ... Download 'Images' to be installed on target machines. 
+- ... Install software such as Docker & Python 3 (PIP)
+- ... Increases 'Virtual Memory' on target systems as needed.
+- ... Publishes Required Ports such as: 5601, 
 - ...
 - ...
 
