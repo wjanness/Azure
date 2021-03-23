@@ -11,7 +11,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 <a href="https://github.com/wjanness/Azure/tree/main/Ansible">- Project Related Ansible Files</a>
 
 This document contains the following details:
-- Description of the Topologu
+- Description of the Topology
 - Access Policies
   - IP Addresses (internal and External)
 - ELK Configuration
@@ -24,13 +24,13 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly avaiable, in addition to restricting traffic to the network.
-- A Load Balancer can ensure systems such as 'Web Servers' have trafic equally distributed to the most avaiable server ensuring that whatever is being hosted has the highest probability if being avaiable. 
-- The 'Jump-Box' Server helps restrict backend accrss to the network to a single point of entry on a seprate external IP address. The 'Jump-Box' server uses an 'Ansible' container to run the 'PLayboox.yml files to configure new and existing servers on the network.
+Load balancing ensures that the application will be highly available, in addition to restricting traffic to the network.
+- A Load Balancer can ensure systems such as 'Web Servers' have trafic equally distributed to the most available server ensuring that whatever is being hosted has the highest probability if being available. 
+- The 'Jump-Box' Server helps restrict backend accross to the network to a single point of entry on a separate external IP address. The 'Jump-Box' server uses an 'Ansible' container to run the 'playbook.yml' files to configure new and existing servers on the network.
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the files and system metriks.
-- The Filebeat process watchs System Logs for changes to the system files. 
-- The Metricbeat process Logs machine metrics including uptime, CPU, MEmory and Traffic Loads.
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the files and system metrics.
+- The Filebeat process watches System Logs for changes to the system files. 
+- The Metricbeat process Logs machine metrics including uptime, CPU, Memory and Traffic Loads.
 
 The configuration details of each machine may be found below.]
 
@@ -47,10 +47,9 @@ The configuration details of each machine may be found below.]
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the Jump-Box Provisioner can accept connections from a piblic address on the Internet. Access to this machine is only allowed from a defined URL / IP addresse(s) ## [jump.4-indigo.com]. Login to this system can only proceed with a pre-shared 'Public Key'.
+Only the Jump-Box Provisioner can accept connections from a public address on the Internet. Access to this machine is only allowed from a defined URL / IP address(es) ## [jump.4-indigo.com]. Login to this system can only proceed with a pre-shared 'Public Key'.
 
 Machines within the network can only be accessed by the Jump-Box Server via the Ansible container running on the Jump Box.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_Ansible Container (public ELK IP on differant private IP 10.1.0.4)
 
 A summary of the access policies in place can be found in the table below.
 
@@ -67,7 +66,7 @@ A summary of the access policies in place can be found in the table below.
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because using Ansible, you can very quickly rebuild the enitre infrastructure. This means better quality assurance in that all servers will be setup the same way. It will also save time because changes can happen all at the same time.
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because using Ansible, you can very quickly rebuild the entire infrastructure. This means better quality assurance in that all servers will be setup the same way. It will also save time because changes can happen all at the same time.
 
 The playbook implements the following tasks:
 - ... Download 'Images' to be installed on target machines. 
@@ -94,8 +93,8 @@ We have installed the following Beats on these machines:
 - MetricBeats
 
 These Beats allow us to collect the following information from each machine:
-- File beats collects logs of file changes for each minitored system. The information is than sent to Logstash and Elastic Search. An Example would be    system.syslog that shows the boot process and 
-- Colleccts metrics on the system such as CPU, Memory and Traffic Load and is used to generate reports. Its ued to report on CPU, Memory and load metrics
+- File beats collects logs of file changes for each monitored system. The information is than sent to Logstash and Elastic Search. An Example would be    system.syslog that shows the boot process and 
+- Collects metrics on the system such as CPU, Memory and Traffic Load and is used to generate reports. Its used to report on CPU, Memory and load metrics
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
