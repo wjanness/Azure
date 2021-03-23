@@ -60,9 +60,9 @@ A summary of the access policies in place can be found in the table below.
 | Elk Server:Port 5601  | Yes                 | kibana.4-indigo.com  |
 | Elk Server:Port 22    | No                  | 10.1.0.4 (jump-box)  |
 | Load Balancer:Port 80 | Yes                 | www.4-indigo.com     |
-| Web-1 Server:Port 80  | No                  | 10.1.0.4 (jump0box)  |
-| Web-2 Server:Port 80  | No                  | 10.1.0.4 (jump0box)  |
-| Web-3 Server:Port 80  | No                  | 10.1.0.4 (jump0box)  |
+| Web-1 Server:Port 80  | No                  | 10.1.0.4 (jump-box)  |
+| Web-2 Server:Port 80  | No                  | 10.1.0.4 (jump-box)  |
+| Web-3 Server:Port 80  | No                  | 10.1.0.4 (jump-box)  |
 
 
 ### Elk Configuration
@@ -75,8 +75,8 @@ The playbook implements the following tasks:
 - ... Install software such as Docker & Python 3 (PIP)
 - ... Increases 'Virtual Memory' on target systems as needed.
 - ... Publishes Required Ports such as: 5601, 
-- ...
-- ...
+- ... Download and install ELK Stack Container (v761)
+- ... Enable installed system to startup on reboot
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
