@@ -25,15 +25,14 @@ This document contains the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly avaiable, in addition to restricting traffic to the network.
-- _TODO: What aspect of security do load balancers protect? Weserver uptime
-What is the advantage of a jump box?_ restricts accrss to the network to a single point on entry to config the network securly.
+- A Load Balancer can ensure systems such as 'Web Servers' have trafic equally distributed to the most avaiable server ensuring that whatever is being hosted has the highest probability if being avaiable. 
+- The 'Jump-Box' Server helps restrict backend accrss to the network to a single point of entry on a seprate external IP address. The 'Jump-Box' server uses an 'Ansible' container to run the 'PLayboox.yml files to configure new and existing servers on the network.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the files and system metriks.
-- _TODO: What does Filebeat watch for? Logs Changes to the system files
-- _TODO: What does Metricbeat record?_ Logs machine metricks including uptime, CPU, MEmory and traffic.
+- The Filebeat process watchs System Logs for changes to the system files. 
+- The Metricbeat process Logs machine metrics including uptime, CPU, MEmory and Traffic Loads.
 
-The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
+The configuration details of each machine may be found below.]
 
 | Name       | Function      | IP Address | Operating System           |
 |------------|---------------|------------|----------------------------|
@@ -48,18 +47,23 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the Jump-Box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses: My Office Address with the correct Public Key
+Only the Jump-Box Provisioner can accept connections from a piblic address on the Internet. Access to this machine is only allowed from a defined URL / IP addresse(s) ## [jump.4-indigo.com]. Login to this system can only proceed with a pre-shared 'Public Key'.
 
 Machines within the network can only be accessed by the Jump-Box Server via the Ansible container running on the Jump Box.
 - _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_Ansible Container (public ELK IP on differant private IP 10.1.0.4)
 
 A summary of the access policies in place can be found in the table below.
 
-| Name     | Publicly Accessible | Allowed IP Addresses |
-|----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
+| Name                  | Publicly Accessible | Allowed IP Addresses |
+|-----------------------|---------------------|----------------------|
+| Jump Box:Port 22      | Yes                 | jump.4-indigo.com    |
+| Elk Server:Port 5601  | Yes                 | kibana.4-indigo.com  |
+| Elk Server:Port 22    | No                  | 10.1.0.4 (jump-box)  |
+| Load Balancer:Port 80 | Yes                 | www.4-indigo.com     |
+| Web-1 Server:Port 80  | No                  | 10.1.0.4 (jump0box)  |
+| Web-2 Server:Port 80  | No                  | 10.1.0.4 (jump0box)  |
+| Web-3 Server:Port 80  | No                  | 10.1.0.4 (jump0box)  |
+
 
 ### Elk Configuration
 
