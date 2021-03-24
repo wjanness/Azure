@@ -100,7 +100,7 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the 'playbook.yml' file to /etc/Ansible/files directory.
+- Copy the 'playbook.yml' file to /etc/Ansible/files directory. Make sure uodate the 'host' IP address in lines 1106 and 1806.
 - Update the 'hosts' file in the /etc/Ansible directory to include any internal IP addresses for new servers
 - Run the playbook, and navigate to the Kibana Server URL to check that the installation worked as expected.
 
