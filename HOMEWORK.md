@@ -1,6 +1,6 @@
 ## The following are the 'Screen Shots' requested to complete the homework.
 
-## Screen Shot of My Virtual Machines in Virthal Network:
+## Screen Shot of My Virtual Machines in Virtual Network:
 <figure><img src="/ScreenShots/VirtualMachines.png"><figcaption></figcaption></figure>
 ## My Containers on VM's
 <figure><img src="/ScreenShots/Containers.png"><figcaption></figcaption></figure>
