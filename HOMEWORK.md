@@ -1,4 +1,4 @@
-## The following are the 'Screen Shots' requested to complete the homework.
+## The following are the 'Screen Shots' from the actual 'Azure' control panel.
 
 <a href="https://github.com/wjanness/Azure/blob/main/README.md">Click here to go back to the Main Page</a>
 
