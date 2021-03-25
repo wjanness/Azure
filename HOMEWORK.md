@@ -1,5 +1,8 @@
 ## The following are the 'Screen Shots' requested to complete the homework.
 
+Back to the Main Page
+https://github.com/wjanness/Azure/blob/main/README.md
+
 ## My Virtual Machines in Virtual Network:
 <figure><img src="/ScreenShots/VirtualMachines.png"><figcaption></figcaption></figure>
 ## My Containers on VM's
@@ -12,3 +15,5 @@
 <figure><img src="/ScreenShots/DVWA.png"><figcaption></figcaption></figure>
 ### My Kibana (http://kibana.4-indigo.com)
 <figure><img src="/ScreenShots/Kibana.png"><figcaption></figcaption></figure>
+
+https://github.com/wjanness/Azure/blob/main/README.md
