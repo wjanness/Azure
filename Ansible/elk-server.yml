@@ -36,47 +36,6 @@
       systemd:
         name: docker
         enabled: yes
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  GNU nano 2.9.3                                                         elk-server.yml                                                                   
-
         state: present
 
       # Use pip module
