@@ -103,9 +103,8 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the 'playbook.yml' file to /etc/Ansible/files directory. 
-- Make sure to update the 'host' IP address in lines 1106 and 1806 in the .
-- Update the 'hosts' file in the /etc/Ansible directory to include any internal IP addresses for new servers
+- Copy the 'filebeat_config.yml' and 'filebeat-playbook.yml' files to /etc/Ansible/files directory. 
+- Make sure to update the 'host' IP address in lines 1106 and 1806 in the filebeats_config.yml file.
 - Run the playbook, and navigate to the Kibana Server URL (kibana.4-indigo.com) to check that the installation worked as expected.
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._ 
