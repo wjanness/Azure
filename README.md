@@ -9,6 +9,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
 
 <a href="https://github.com/wjanness/Azure/tree/main/Ansible">- Project Related Ansible Files</a>
+<a href="https://github.com/wjanness/Azure/tree/main/Homework.md">- Screenshots of Azure configuration</a>
 
 This document contains the following details:
 - Description of the Topology
