@@ -14,5 +14,6 @@
 <figure><img src="/ScreenShots/DVWA.png"><figcaption></figcaption></figure>
 ### My Kibana (http://kibana.4-indigo.com)
 <figure><img src="/ScreenShots/Kibana.png"><figcaption></figcaption></figure>
-
+### My Previous Cloud Diagram
+<figure><img src="/Diagrams/CloudSecurity.png"><figcaption></figcaption></figure>
 <a href="https://github.com/wjanness/Azure/blob/main/README.md">Click here to go back to the Main Page</a>
