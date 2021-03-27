@@ -7,15 +7,9 @@ The files in this repository were used to configure the network depicted below.
 <figure><img src="/Diagrams/Azure.png"><figcaption></figcaption></figure>
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the "YAML" files may be used to install only certain pieces of it, such as Filebeat.
 
-<<<<<<< HEAD
 | Name                                                                            |
 ------------------------------------------------------------------------------------------------|
 |<a href="https://github.com/wjanness/Azure/tree/main/Ansible">- Project Related Ansible Files</a> |
-=======
-| Related Files and Screenshots                                                                                                      |
-|-----------------------------------------------------------------------------------------------------------|
-|<a href="https://github.com/wjanness/Azure/tree/main/Ansible">- Project Related Ansible Files</a>          |
->>>>>>> 605c8d8dbe6827ee2382725fd91965767acedc9d
 |<a href="https://github.com/wjanness/Azure/blob/main/HOMEWORK.md">- Screenshots of Azure configuration</a> |
 
 This document contains the following details:
