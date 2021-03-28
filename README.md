@@ -107,8 +107,7 @@ SSH into the control node and follow the steps below:
 - Make sure to update the 'host' IP address in lines 1106 and 1806 in the filebeats_config.yml file.
 - Run the playbook, and navigate to the Kibana Server URL (kibana.4-indigo.com) to check that the installation worked as expected.
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._ 
-
-curl -i Web_location_of_the_YML_file
-
-ansible-playbook /path/playbook_name.yml
+Run these commands to first change to the directory where the elk-server.yml file will be saved. You will run the curl command to download the elk-server
+cd /etc/ansible
+curl -i href="https://github.com/wjanness/Azure/tree/main/Ansible/elk-server.yml
+ansible-playbook /etc/ansible/elk-server.yml
