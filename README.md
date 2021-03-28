@@ -108,6 +108,6 @@ SSH into the control node and follow the steps below:
 - Run the playbook, and navigate to the Kibana Server URL (kibana.4-indigo.com) to check that the installation worked as expected.
 
 Run these commands to first change to the directory where the elk-server.yml file will be saved. You will run the curl command to download the elk-server
-cd /etc/ansible
-curl -i href="https://github.com/wjanness/Azure/tree/main/Ansible/elk-server.yml
-ansible-playbook /etc/ansible/elk-server.yml
+* cd /etc/ansible
+* curl -i href="https://github.com/wjanness/Azure/tree/main/Ansible/elk-server.yml
+* ansible-playbook /etc/ansible/elk-server.yml
